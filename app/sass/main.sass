@@ -1,0 +1,93 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+p
+	margin-bottom: 65px
+	font-size: 1.125em
+	font-weight: 400
+	line-height: 1.4
+	&.italic
+		font-style: italic
+		margin: 0 200px 0 60px	
+section
+	h2
+		font-family: $dop-font
+		text-align: center
+		color: #000000
+		font-size: 2.188em
+		font-weight: 800
+.wrap
+	max-width: 1170px
+	padding: 0 15px
+	margin: 0 auto
+.block-img
+	text-align: center
+.header
+	font-family: $dop-font
+	padding-top: 100px
+	display: flex
+	margin-bottom: 100px
+	.block-left
+		margin-right: 50px
+		margin-top: 15px
+		span
+			color: $accent
+			font-size: 1.25em
+			font-weight: 600
+		h1
+			color: #000000
+			font-size: 2.5em
+			font-weight: 800
+			line-height: 1.2
+			margin: 25px 0 30px
+		p
+			color: #000000
+			font-size: 1.25em
+			font-weight: 600
+			line-height: 1.5	
+.section__1
+	h2
+		margin-bottom: 95px
+	.italic
+		margin-bottom: 65px
+	.block-img
+		margin: 70px 0		
+
+
+@import "media" // Always at the end
